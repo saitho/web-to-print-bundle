@@ -5,9 +5,6 @@ web2print_settings: Web-to-Print Settings
 web2print_preview_pdf: "Generovat a prohl\xEDdnout PDF"
 web2print_cancel_pdf_creation: "Zru\u0161it generov\xE1n\xED PDF"
 web2print_generate_pdf: Generovat PDF
-web2print_download_pdf: "St\xE1hnout PDF"
-web2print_last-generated: Naposledy vygenerovano
-web2print_last-generate-message: "Posledn\xE1 zpr\xE1va"
 web2print: Web2Print
 web2print_prepare_pdf_generation: "P\u0159\xEDprava PDF generov\xE1n\xED"
 web2print_start_html_rendering: "Za\u010D\xE1tek HTML renderov\xE1n\xED"

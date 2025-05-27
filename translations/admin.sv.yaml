@@ -5,9 +5,6 @@ web2print_settings: Web-to-Print Settings
 web2print_preview_pdf: "Skapa & f\xF6rhandsgranska PDF"
 web2print_cancel_pdf_creation: Avbryt PDF-skapande
 web2print_generate_pdf: Skapa PDF
-web2print_download_pdf: Ladda ner PDF
-web2print_last-generated: Skapades senast
-web2print_last-generate-message: Senaste Generera-meddelandet
 web2print: Webb-till-utskrift
 web2print_prepare_pdf_generation: "F\xF6rbered PDF-skapade"
 web2print_start_html_rendering: "P\xE5b\xF6rja HTML-rendering"

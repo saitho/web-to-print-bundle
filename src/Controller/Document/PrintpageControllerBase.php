@@ -263,7 +263,7 @@ abstract class PrintpageControllerBase extends DocumentControllerBase
     /**
      * @throws Exception
      */
-    #[Route('/pdf-download', name: 'pdfdownload', methods: ['GET'])]
+    #[Route('/images-download', name: 'imagesdownload', methods: ['GET'])]
     public function pdfDownloadAction(Request $request): BinaryFileResponse
     {
         $document = PrintAbstract::getById($request->query->getInt('id'));
@@ -271,6 +271,9 @@ abstract class PrintpageControllerBase extends DocumentControllerBase
         if (!$document) {
             throw $this->createNotFoundException('Document with id ' . $request->query->getInt('id') . ' not found.');
         }
+
+        dump($document);
+        die;
 
         if ($this->checkFileExists($document->getPdfFileName())) {
             $response = new BinaryFileResponse($document->getPdfFileName());

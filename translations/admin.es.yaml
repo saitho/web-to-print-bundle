@@ -5,9 +5,6 @@ web2print_settings: Web-to-Print Settings
 web2print_preview_pdf: Generar y previsualizar PDF
 web2print_cancel_pdf_creation: "Cancelar creaci\xF3n PDF"
 web2print_generate_pdf: Generar PDF
-web2print_download_pdf: Descargar PDF
-web2print_last-generated: "\xDAltimo generado"
-web2print_last-generate-message: "\xDAltimo mensaje generado"
 web2print: Web2Print
 web2print_prepare_pdf_generation: web2print_prepare_pdf_generation
 web2print_start_html_rendering: web2print_start_html_rendering

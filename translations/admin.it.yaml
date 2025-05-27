@@ -5,9 +5,6 @@ web2print_settings: Web-to-Print Settings
 web2print_preview_pdf: Genera PDF con anteprima
 web2print_cancel_pdf_creation: Annulla creazione PDF
 web2print_generate_pdf: Genera PDF
-web2print_download_pdf: Scarica PDF
-web2print_last-generated: Ultimo generato
-web2print_last-generate-message: Messaggio ultima generazione
 web2print: Web2Print
 web2print_prepare_pdf_generation: Prepara generazione PDF
 web2print_start_html_rendering: Avvio rappresentazione HTML

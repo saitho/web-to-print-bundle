@@ -5,9 +5,6 @@ web2print_settings: Web-to-Print Settings
 web2print_preview_pdf: PDF Aanmaken en Weergeven
 web2print_cancel_pdf_creation: PDF aanmaken annuleren
 web2print_generate_pdf: Genereer PDF
-web2print_download_pdf: PDF downloaden
-web2print_last-generated: Laatst aangemaakt
-web2print_last-generate-message: Laatst aangemaakte bericht
 web2print: Web2Print
 web2print_prepare_pdf_generation: PDF aanmaken voorbereiden
 web2print_start_html_rendering: Start HTML opbouw

@@ -5,9 +5,6 @@ web2print_settings: Web-to-Print Settings
 web2print_preview_pdf: "Generova\u0165 a prezrie\u0165 PDF"
 web2print_cancel_pdf_creation: "Zru\u0161i\u0165 generovanie PDF"
 web2print_generate_pdf: "Generova\u0165 PDF"
-web2print_download_pdf: "Stiahnu\u0165 PDF"
-web2print_last-generated: "Naposledy vygenerovan\xE9"
-web2print_last-generate-message: "Posledn\xE1 spr\xE1va"
 web2print: Web2Print
 web2print_prepare_pdf_generation: "Pr\xEDprava generovania PDF"
 web2print_start_html_rendering: "Za\u010Diatok HTML renderovania"

@@ -5,9 +5,6 @@ web2print_settings: Web-to-Print Settings
 web2print_preview_pdf: "Podgl\u0105d PDF"
 web2print_cancel_pdf_creation: "Anuluj kreacj\u0119 PDF"
 web2print_generate_pdf: Generuj PDF
-web2print_download_pdf: Pobierz PDF
-web2print_last-generated: Ostatnio wygenerowane
-web2print_last-generate-message: "Ostatnia wiadomo\u015B\u0107 z generowania"
 web2print: Web-to-Print
 web2print_prepare_pdf_generation: Przygotuj Generowanie PDF
 web2print_start_html_rendering: "Rozpocz\u0119to Renderowanie HTML"

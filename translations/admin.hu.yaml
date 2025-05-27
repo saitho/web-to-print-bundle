@@ -5,9 +5,6 @@ web2print_settings: Web-to-Print Settings
 web2print_preview_pdf: "PDF gener\xE1l\xE1sa & el\u0151n\xE9zet"
 web2print_cancel_pdf_creation: "PDF L\xE9trehoz\xE1s le\xE1ll\xEDt\xE1sa"
 web2print_generate_pdf: "PDF gener\xE1l\xE1sa"
-web2print_download_pdf: "PDF let\xF6lt\xE9se"
-web2print_last-generated: "Utols\xF3 gener\xE1l\xE1s"
-web2print_last-generate-message: "Utols\xF3 gener\xE1l\xE1s \xFCzenete"
 web2print: Web-to-Print
 web2print_prepare_pdf_generation: "PDF gener\xE1l\xE1s el\u0151k\xE9sz\xEDt\xE9se"
 web2print_start_html_rendering: "HTML gener\xE1l\xE1s elkezd\xE9se"

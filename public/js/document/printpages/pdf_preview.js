@@ -85,30 +85,22 @@ pimcore.document.printpages.pdfpreview = Class.create({
                 ]
             });
 
-            //Download PDF Panel
+            //Download files Panel
             this.downloadButton = new Ext.Button({
-                text: t("web2print_download_pdf"),
+                text: t("web2print_download_files"),
                 iconCls: "pimcore_icon_download",
                 style: "float: right; margin-top: 10px",
                 handler: function () {
                     var date = new Date();
-                    var url = Routing.generate('pimcore_bundle_web2print_document_printpage_pdfdownload', {id: this.page.id, download: 1, time: date.getTime()});
+                    var url = Routing.generate('pimcore_bundle_web2print_document_printpage_imagesdownload', {id: this.page.id, platform: this.platformField.getValue(), download: 1, time: date.getTime()});
                     pimcore.helpers.download(url);
                 }.bind(this)
             });
-            this.generatedDateField = new Ext.form.TextField({
+            this.platformField = new Ext.form.TextField({
                 readOnly: true,
                 width: "100%",
-                name: "last-generated",
-                fieldLabel: t("web2print_last-generated"),
-                value: ""
-            });
-            this.generateMessageField = new Ext.form.TextArea({
-                readOnly: true,
-                height: 100,
-                width: "100%",
-                name: "last-generate-message",
-                fieldLabel: t("web2print_last-generate-message"),
+                name: "platform",
+                fieldLabel: t("web2print_platform"),
                 value: ""
             });
             this.dirtyLabel = new Ext.form.Label({
@@ -117,11 +109,11 @@ pimcore.document.printpages.pdfpreview = Class.create({
                 hidden: true
             });
             details.push(new Ext.form.FormPanel({
-                title: t("web2print_download_pdf"),
+                title: t("web2print_download_files"),
                 bodyStyle: "padding: 10px;",
                 style: "padding-top: 10px",
                 border: true,
-                items: [this.generatedDateField, this.generateMessageField, this.dirtyLabel, this.downloadButton]
+                items: [this.platformField, this.dirtyLabel, this.downloadButton]
             }));
 
 
@@ -375,7 +367,7 @@ pimcore.document.printpages.pdfpreview = Class.create({
 
     loadCurrentPreview: function () {
         var date = new Date();
-        var url = Routing.generate('pimcore_bundle_web2print_document_printpage_pdfdownload', {id: this.page.id, time: date.getTime()});
+        var url = Routing.generate('pimcore_bundle_web2print_document_printpage_imagesdownload', {id: this.page.id, time: date.getTime()});
 
         try {
             Ext.get(this.iframeName).dom.src = url;
@@ -417,9 +409,6 @@ pimcore.document.printpages.pdfpreview = Class.create({
                     this.statusUpdateBox.hide();
 
                     this.downloadButton.setDisabled(!result.downloadAvailable);
-
-                    this.generatedDateField.setValue(result.date);
-                    this.generateMessageField.setValue(result.message);
 
                     if(result.downloadAvailable) {
                         this.loadCurrentPreview();
